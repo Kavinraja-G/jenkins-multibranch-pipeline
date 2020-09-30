@@ -4,9 +4,7 @@ pipeline {
         stage ('GitCheckout Stage') {
 
             steps {
-                withMaven(maven : 'maven_3_5_0') {
-                    sh 'mvn clean compile'
-                }
+                sh "git checkout master"
             }
         }
 
