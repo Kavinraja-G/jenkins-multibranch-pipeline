@@ -9,13 +9,13 @@ pipeline {
 
         stage ('Testing Stage') {
             steps {
-                sh 'test'
+                sh './test.sh'
             }
         }
 
         stage ('Deployment Stage') {
             steps {
-                sh 'sample'
+                sh './sample.sh'
             }
         }
     }
